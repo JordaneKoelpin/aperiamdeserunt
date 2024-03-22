@@ -1,0 +1,122 @@
+{
+  "name": "aperiamdeserunt",
+  "version": "1.0.0",
+  "description": "A Javascript (TypeScript) Port of Adobe Gainmap Technology for storing HDR Images using an SDR Image + a gain map",
+  "homepage": "https://github.com/JordaneKoelpin/aperiamdeserunt.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JordaneKoelpin/aperiamdeserunt.git"
+  },
+  "keywords": [
+    "labore",
+    "qui",
+    "incidunt",
+    "three",
+    "fugiat"
+  ],
+  "author": "MyrtieGoodwin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JordaneKoelpin/aperiamdeserunt.git/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "main": "dist/index.umd.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./libultrahdr": {
+      "import": "./dist/libultrahdr.js",
+      "types": "./dist/libultrahdr.d.ts"
+    },
+    "./worker": {
+      "import": "./dist/worker.js",
+      "types": "./dist/worker.d.ts"
+    },
+    "./worker-interface": {
+      "import": "./dist/worker-interface.js",
+      "types": "./dist/worker-interface.d.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/index.d.ts"
+      ],
+      "libultrahdr": [
+        "./dist/libultrahdr.d.ts"
+      ],
+      "worker": [
+        "./dist/worker.d.ts"
+      ],
+      "worker-interface": [
+        "./dist/worker-interface.d.ts"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "three": "^0.157.0"
+  },
+  "dependencies": {
+    "promise-worker-transferable": "^1.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@rollup/plugin-commonjs": "^25.0.5",
+    "@rollup/plugin-json": "^6.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.0.0",
+    "@semantic-release/git": "github:semantic-release/git",
+    "@semantic-release/github": "^9.2.1",
+    "@semantic-release/npm": "^11.0.0",
+    "@semantic-release/release-notes-generator": "^12.0.0",
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.8.4",
+    "@types/three": "^0.157.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "babel-jest": "^29.7.0",
+    "concurrently": "^8.2.2",
+    "conventional-changelog-conventionalcommits": "^7.0.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.51.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jest-extended": "^2.0.0",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-quasar": "^1.1.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-extended": "^4.0.2",
+    "jest-junit": "^16.0.0",
+    "puppeteer": "^21.3.8",
+    "rollup": "^2.79.1",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-license": "^3.1.0",
+    "semantic-release": "^22.0.5",
+    "three": "^0.157.0",
+    "ts-jest": "^29.1.1",
+    "typedoc": "^0.25.2",
+    "typedoc-github-wiki-theme": "^1.1.0",
+    "typedoc-plugin-markdown": "^3.16.0",
+    "typescript": "^5.2.2"
+  }
+}
